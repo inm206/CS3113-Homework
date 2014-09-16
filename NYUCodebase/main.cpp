@@ -29,7 +29,7 @@ GLuint LoadTexture(const char *image_path) {
     GLuint textureID;
     glGenTextures(1, &textureID);
     glBindTexture(GL_TEXTURE_2D, textureID);
-    //glTexImage2D(GL_TEXTURE_2D, 0, 4, surface->w, surface->h, 0, GL_RGBA, GL_UNSIGNED_BYTE, surface->pixels);
+    glTexImage2D(GL_TEXTURE_2D, 0, 4, surface->w, surface->h, 0, GL_RGBA, GL_UNSIGNED_BYTE, surface->pixels);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     SDL_FreeSurface(surface);
@@ -55,8 +55,8 @@ int main(int argc, char *argv[])
     float emojiAngle = 0.0f;
     
     GLint crack = LoadTexture("crack.jpg");
-    GLint flower = LoadTexture("flower.jpg");
-    //GLint grout = LoadTexture("grout.jpg");
+    GLint flower = LoadTexture("flowers.jpg");
+    GLint grout = LoadTexture("grout.jpg");
     
     
 	while (!done) {
@@ -94,30 +94,26 @@ int main(int argc, char *argv[])
         GLfloat triangle2[] = {1.0f, 0.5f, 0.5f, -0.5f, 0.5f, -0.5f}; //defines points of vertices of triangle
         glVertexPointer(2, GL_FLOAT, 0, triangle2);
         glEnableClientState(GL_VERTEX_ARRAY);
+
         
-        
+        glLoadIdentity();
         //Square with paint crack
-        DrawSprite(crack, 0.0, 0.0, emojiAngle*30);
+        DrawSprite(crack, -1.0, 0.0, emojiAngle*30);
         
         GLfloat quad[] = {-0.5f, 0.5f, -0.5f, -0.5f, 0.5f, -0.5f, 0.5f, 0.5f};
         glVertexPointer(2, GL_FLOAT, 0, quad);
         glEnableClientState(GL_VERTEX_ARRAY);
         
-        
+        glLoadIdentity();
         //Square with flower
-        DrawSprite(flower, 0.0, 0.0, 0.0);
+        DrawSprite(flower, 1.0, 0.0, 0.0);
         
-        GLfloat quad2[] = {0.75f, 0.0f, 0.75f, 0.5f, 1.0f, 0.0f, 1.0f, 0.5f};
-        glVertexPointer(2, GL_FLOAT, 0, quad2);
-        glEnableClientState(GL_VERTEX_ARRAY);
-        /*
+        
+        glLoadIdentity();
         //Square with grout
-        DrawSprite(grout, 0.0, 0.0, 0.0);
+        DrawSprite(grout, 1.0, 1.0, 0.0);
         
-        GLfloat quad3[] = {-0.5f, 0.5f, -0.5f, -0.5f, 0.5f, -0.5f, 0.5f, 0.5f};
-        glVertexPointer(2, GL_FLOAT, 0, quad3);
-        glEnableClientState(GL_VERTEX_ARRAY);
-        */
+        
         
         
 		SDL_GL_SwapWindow(displayWindow);
