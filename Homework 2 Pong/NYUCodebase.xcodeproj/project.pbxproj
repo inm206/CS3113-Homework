@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A14252819CA83E4003339F8 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A14252719CA83E4003339F8 /* Entity.cpp */; };
+		6A14252D19CF8E94003339F8 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A14252919CF8E94003339F8 /* ball.png */; };
+		6A14252E19CF8E94003339F8 /* paddle.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A14252A19CF8E94003339F8 /* paddle.png */; };
+		6A14252F19CF8E94003339F8 /* winner_left.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A14252B19CF8E94003339F8 /* winner_left.jpg */; };
+		6A14253019CF8E94003339F8 /* winner_right.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A14252C19CF8E94003339F8 /* winner_right.jpg */; };
 		6D5A86AE19AE5C710066C1FD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5A86AD19AE5C710066C1FD /* Cocoa.framework */; };
 		6D5A86B819AE5C710066C1FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D5A86B619AE5C710066C1FD /* InfoPlist.strings */; };
 		6D5A86BA19AE5C710066C1FD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D5A86B919AE5C710066C1FD /* main.cpp */; };
@@ -32,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A14252619CA8336003339F8 /* Entity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		6A14252719CA83E4003339F8 /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
+		6A14252919CF8E94003339F8 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		6A14252A19CF8E94003339F8 /* paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paddle.png; sourceTree = "<group>"; };
+		6A14252B19CF8E94003339F8 /* winner_left.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = winner_left.jpg; sourceTree = "<group>"; };
+		6A14252C19CF8E94003339F8 /* winner_right.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = winner_right.jpg; sourceTree = "<group>"; };
 		6D5A86AA19AE5C710066C1FD /* NYUCodebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYUCodebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D5A86AD19AE5C710066C1FD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6D5A86B019AE5C710066C1FD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -130,6 +141,10 @@
 		6D5A86B419AE5C710066C1FD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6A14252919CF8E94003339F8 /* ball.png */,
+				6A14252A19CF8E94003339F8 /* paddle.png */,
+				6A14252B19CF8E94003339F8 /* winner_left.jpg */,
+				6A14252C19CF8E94003339F8 /* winner_right.jpg */,
 				6D5A86C519AE5C710066C1FD /* Images.xcassets */,
 				6D5A86B519AE5C710066C1FD /* NYUCodebase-Info.plist */,
 				6D5A86B619AE5C710066C1FD /* InfoPlist.strings */,
@@ -160,6 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				6D5A86B919AE5C710066C1FD /* main.cpp */,
+				6A14252619CA8336003339F8 /* Entity.h */,
+				6A14252719CA83E4003339F8 /* Entity.cpp */,
 			);
 			name = Code;
 			sourceTree = "<group>";
@@ -242,7 +259,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D5A86B819AE5C710066C1FD /* InfoPlist.strings in Resources */,
+				6A14252F19CF8E94003339F8 /* winner_left.jpg in Resources */,
+				6A14252E19CF8E94003339F8 /* paddle.png in Resources */,
+				6A14253019CF8E94003339F8 /* winner_right.jpg in Resources */,
 				6D5A86C619AE5C710066C1FD /* Images.xcassets in Resources */,
+				6A14252D19CF8E94003339F8 /* ball.png in Resources */,
 				6D5A86BE19AE5C710066C1FD /* Credits.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A14252819CA83E4003339F8 /* Entity.cpp in Sources */,
 				6D5A86BA19AE5C710066C1FD /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
