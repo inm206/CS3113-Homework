@@ -19,12 +19,22 @@ GLuint LoadTexture(const char *image_path) {
     glBindTexture(GL_TEXTURE_2D, textureID);
     glTexImage2D(GL_TEXTURE_2D, 0, 4, surface->w, surface->h, 0, GL_RGBA, GL_UNSIGNED_BYTE,
                  surface->pixels);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
     SDL_FreeSurface(surface);
     return textureID;
 }
-
+/*
+void DrawSpriteSheetSprite (int spriteTexture, int index, int spriteCountX, int spriteCountY){
+    
+    glBindTexture(GL_TEXTURE_2D, spriteTexture);
+    
+    
+    float u = (float)(((int)index) % spriteCountX) / (float) spriteCountX;
+    float v= (float)(((int)index) / spriteCountX) / (float) spriteCountY;
+    float spriteWidth = 1.0/(float)spriteCountX;
+    float spriteHeight = 1.0
+}*/
 
 void Setup(){
     SDL_Init(SDL_INIT_VIDEO);
@@ -131,6 +141,7 @@ void Update(){
 }
 
 void Render(){
+
     glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
     glClear(GL_COLOR_BUFFER_BIT);
     paddle1->Draw();
