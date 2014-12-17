@@ -10,17 +10,13 @@
 	<string>NYUCodebase</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>13D63FEE-BBD1-4232-A76F-8FB00834B740</key>
-		<string>https://github.com/inm206/CS3113.git</string>
 		<key>DB4F5DC96D170DBFF8257AF41EC3C628A96F93C8</key>
 		<string>https://github.com/inm206/CS3113.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Homework 2 Pong/NYUCodebase.xcodeproj</string>
+	<string>Homework 3 Space Invaders/NYUCodebase.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>13D63FEE-BBD1-4232-A76F-8FB00834B740</key>
-		<string>../../../../CS3113 Homework</string>
 		<key>DB4F5DC96D170DBFF8257AF41EC3C628A96F93C8</key>
 		<string>../../..</string>
 	</dict>
@@ -32,14 +28,6 @@
 	<string>DB4F5DC96D170DBFF8257AF41EC3C628A96F93C8</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>13D63FEE-BBD1-4232-A76F-8FB00834B740</string>
-			<key>IDESourceControlWCCName</key>
-			<string>CS3113 Homework</string>
-		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
